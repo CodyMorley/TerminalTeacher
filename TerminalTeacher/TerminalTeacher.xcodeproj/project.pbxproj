@@ -13,6 +13,12 @@
 		04A5706D2624113000F2DE97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A5706B2624113000F2DE97 /* Main.storyboard */; };
 		04A5706F2624113100F2DE97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A5706E2624113100F2DE97 /* Assets.xcassets */; };
 		04A570722624113100F2DE97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A570702624113100F2DE97 /* LaunchScreen.storyboard */; };
+		04A5708626241D7800F2DE97 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A5708526241D7800F2DE97 /* Command.swift */; };
+		04A57089262421D300F2DE97 /* ChooseCommandTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A57088262421D300F2DE97 /* ChooseCommandTableViewController.swift */; };
+		04A5708C2624D85900F2DE97 /* CommandOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A5708B2624D85900F2DE97 /* CommandOption.swift */; };
+		04A5708F2624D8B800F2DE97 /* SelectCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A5708E2624D8B800F2DE97 /* SelectCommand.swift */; };
+		04A570922624D97400F2DE97 /* CheckCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A570912624D97400F2DE97 /* CheckCommand.swift */; };
+		04A570952624DA2300F2DE97 /* TextCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A570942624DA2300F2DE97 /* TextCommand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		04A5706E2624113100F2DE97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04A570712624113100F2DE97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04A570732624113100F2DE97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A5708526241D7800F2DE97 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		04A57088262421D300F2DE97 /* ChooseCommandTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCommandTableViewController.swift; sourceTree = "<group>"; };
+		04A5708B2624D85900F2DE97 /* CommandOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandOption.swift; sourceTree = "<group>"; };
+		04A5708E2624D8B800F2DE97 /* SelectCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCommand.swift; sourceTree = "<group>"; };
+		04A570912624D97400F2DE97 /* CheckCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckCommand.swift; sourceTree = "<group>"; };
+		04A570942624DA2300F2DE97 /* TextCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCommand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				04A570692624113000F2DE97 /* ViewController.swift */,
+				04A57088262421D300F2DE97 /* ChooseCommandTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -119,6 +132,11 @@
 		04A57083262411B000F2DE97 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				04A5708526241D7800F2DE97 /* Command.swift */,
+				04A5708B2624D85900F2DE97 /* CommandOption.swift */,
+				04A5708E2624D8B800F2DE97 /* SelectCommand.swift */,
+				04A570912624D97400F2DE97 /* CheckCommand.swift */,
+				04A570942624DA2300F2DE97 /* TextCommand.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -194,8 +212,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A5706A2624113000F2DE97 /* ViewController.swift in Sources */,
+				04A57089262421D300F2DE97 /* ChooseCommandTableViewController.swift in Sources */,
+				04A570952624DA2300F2DE97 /* TextCommand.swift in Sources */,
+				04A570922624D97400F2DE97 /* CheckCommand.swift in Sources */,
 				04A570662624113000F2DE97 /* AppDelegate.swift in Sources */,
 				04A570682624113000F2DE97 /* SceneDelegate.swift in Sources */,
+				04A5708F2624D8B800F2DE97 /* SelectCommand.swift in Sources */,
+				04A5708C2624D85900F2DE97 /* CommandOption.swift in Sources */,
+				04A5708626241D7800F2DE97 /* Command.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
