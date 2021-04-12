@@ -24,6 +24,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tableView.reloadData()
+        writeOutput()
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -64,6 +65,28 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func commandAdded(_ command: Command) {
         commands.append(command)
+    }
+    
+    func writeOutput() {
+        var str = ""
+        
+        for command in commands {
+            let output = command.writeOutput()
+            if !output.isEmpty {
+                if !str.isEmpty {
+                    str = str.trimmingCharacters(in: .whitespacesAndNewlines)
+                    str += " | "
+                }
+                str.append(output)
+            }
+        }
+        
+        let cmd = str.trimmingCharacters(in: .whitespacesAndNewlines)
+        if !cmd.isEmpty {
+            output.text = cmd
+        } else {
+            output.text = "Tap + to get started"
+        }
     }
 }
 
